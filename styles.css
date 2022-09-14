@@ -1,0 +1,107 @@
+/*RESET DAS CONFIGURAÇÕES*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*TIRAR AS BOLINHAS DA LISTA */
+ul{
+  list-style: none;
+}
+
+body{
+  background-image: url(./assets/bg.jpg);
+  background-position: top center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #121214;
+}
+
+body *{
+  font-family: 'Inter', sans-serif;
+  line-height: 160%;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 580px;
+  width: 90%;
+  margin: auto;
+}
+
+header div{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-image: linear-gradient(90deg, #9572fc 0%, #43e7ad 50.54%, #e2d45c 100%);
+}
+
+header img{
+  padding: 5px;
+  width: 160px;
+  border-radius: 50%;
+}
+main{
+  display: grid;
+  /*
+  Podemos usar display-grid ou o display-flex com flex direction para colocar o espaço entra as sections
+  display: flex;
+  flex-direction: column;*/
+  gap: 24px;
+  max-width: 580px;
+  width: 90%;
+  margin: auto;
+  margin-top: 32px;
+}
+
+section{
+  color: white;
+  background-image: linear-gradient(90deg, #9572fc 0%, #43e7ad 50.54%, #e2d45c 100%);
+  padding-top: 4px;
+  border-radius: 10px;
+
+}
+
+section div{
+  background-color: #2a2634;
+  padding: 32px;
+  padding-top: 24px;
+  border-radius: 8px;
+}
+
+section h2{
+  letter-spacing: -0.47px;
+}
+
+section p{
+  letter-spacing: -0.18px;
+  color: #a1a1aa;
+}
+
+section ul{
+  /*
+  display block (padrão): bloqueia uma linha inteira, por isso os itens ficam um abaixo do outro
+  display inline -> mantém os intens na mesma llinha, alguns elementos como a são inline por padrão
+  display-felx: coloca os elemntos dentro de um containe um do lado do outro
+  */
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  /* 
+  flex-wrap faz com que o conteudo respeite o tamanho máxim o do box e coloque em linhas a baixo
+  */
+  gap: 16px;
+
+}
+
+.game-list img{
+  width: 90px;
+  border-radius: 8px;
+}
+
+.channel-list img{
+  width: 70px;
+  border-radius: 50%;
+}
