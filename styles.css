@@ -23,24 +23,31 @@ body *{
 }
 
 header{
-  display: flex;
-  align-items: center;
-  justify-content: center;
   max-width: 580px;
   width: 90%;
   margin: auto;
+  margin-top: 32px;
 }
 
 header div{
-  width: 160px;
-  height: 160px;
+  display: flex;
+  margin: auto;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   background-image: linear-gradient(90deg, #9572fc 0%, #43e7ad 50.54%, #e2d45c 100%);
+  padding: 5px;
+  transition: transform .3s;
+}
+
+
+header div:hover{
+  transform: scale(1.1);
+  
 }
 
 header img{
-  padding: 5px;
-  width: 160px;
+  width: 120px;
   border-radius: 50%;
 }
 main{
@@ -52,8 +59,7 @@ main{
   gap: 24px;
   max-width: 580px;
   width: 90%;
-  margin: auto;
-  margin-top: 32px;
+  margin: 32px auto;
 }
 
 section{
@@ -96,12 +102,21 @@ section ul{
 
 }
 
+section ul li{
+  transition: transform .3s;
+}
+
+section ul li:hover{
+transform: scale(1.1);
+}
+
 .game-list img{
   width: 90px;
   border-radius: 8px;
 }
 
 .channel-list img{
+  border:1px solid#333333;
   width: 70px;
   border-radius: 50%;
 }
