@@ -1,15 +1,15 @@
 /*RESET DAS CONFIGURAÇÕES*/
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 /*TIRAR AS BOLINHAS DA LISTA */
-ul{
+ul {
   list-style: none;
 }
 
-body{
+body {
   background-image: url(./assets/bg.jpg);
   background-position: top center;
   background-size: 100% auto;
@@ -17,19 +17,19 @@ body{
   background-color: #121214;
 }
 
-body *{
+body * {
   font-family: 'Inter', sans-serif;
   line-height: 160%;
 }
 
-header{
+header {
   max-width: 580px;
   width: 90%;
   margin: auto;
   margin-top: 32px;
 }
 
-header div{
+header div {
   display: flex;
   margin: auto;
   width: 120px;
@@ -41,16 +41,17 @@ header div{
 }
 
 
-header div:hover{
+header div:hover {
   transform: scale(1.1);
-  
+
 }
 
-header img{
+header img {
   width: 120px;
   border-radius: 50%;
 }
-main{
+
+main {
   display: grid;
   /*
   Podemos usar display-grid ou o display-flex com flex direction para colocar o espaço entra as sections
@@ -62,7 +63,7 @@ main{
   margin: 32px auto;
 }
 
-section{
+section {
   color: white;
   background-image: linear-gradient(90deg, #9572fc 0%, #43e7ad 50.54%, #e2d45c 100%);
   padding-top: 4px;
@@ -70,23 +71,23 @@ section{
 
 }
 
-section div{
+section div {
   background-color: #2a2634;
   padding: 24px;
   padding-top: 24px;
   border-radius: 8px;
 }
 
-section h2{
+section h2 {
   letter-spacing: -0.47px;
 }
 
-section p{
+section p {
   letter-spacing: -0.18px;
   color: #a1a1aa;
 }
 
-section ul{
+section ul {
   /*
   display block (padrão): bloqueia uma linha inteira, por isso os itens ficam um abaixo do outro
   display inline -> mantém os intens na mesma llinha, alguns elementos como a são inline por padrão
@@ -99,48 +100,48 @@ section ul{
   flex-wrap faz com que o conteudo respeite o tamanho máxim o do box e coloque em linhas a baixo
   */
   gap: 16px;
-
+  
 }
 
-section ul li{
+section ul li {
   transition: transform .3s;
 }
 
-section ul li:hover{
-transform: scale(1.1);
+section ul li:hover {
+  transform: scale(1.1);
 }
 
-.game-list img{
+.game-list img {
   width: 90px;
   border-radius: 8px;
 }
 
-.channel-list img{
-  border:1px solid#333333;
+.channel-list img {
+  border: 1px solid#333333;
   width: 70px;
   border-radius: 50%;
 }
 
 /* animation */
 
-header div{
+header div {
   animation: fromTop .5s backwards;
 }
 
-main section{
+main section {
   animation: fromLeft 0.5s backwards;
 }
 
-main section:nth-child(1){
-  animation-delay: .2s ;
+main section:nth-child(1) {
+  animation-delay: .2s;
 }
 
-main section:nth-child(2){
-  animation-delay: .4s ;
+main section:nth-child(2) {
+  animation-delay: .4s;
 }
 
-main section:nth-child(3){
-  animation-delay: .6s ;
+main section:nth-child(3) {
+  animation-delay: .6s;
 }
 
 @keyframes fromTop {
@@ -149,7 +150,7 @@ main section:nth-child(3){
     transform: translateY(-30px)
   }
 
-  to{
+  to {
     opacity: 1;
     transform: translateY(0);
   }
@@ -162,7 +163,7 @@ main section:nth-child(3){
     transform: translateX(-30px)
   }
 
-  to{
+  to {
     opacity: 1;
     transform: translateY(0);
   }
